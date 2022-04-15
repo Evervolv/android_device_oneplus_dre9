@@ -1,5 +1,8 @@
 # Audio
 ro.config.vc_call_vol_steps=9
 
+# Bluetooth
+bluetooth.device.default_name=OnePlus Nord N200 5G
+
 # USB
 vendor.usb.product_string=OnePlus Nord N200 5G
