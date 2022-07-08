@@ -92,9 +92,4 @@ void load_props(bool is_tmo) {
 void vendor_load_properties() {
     std::string project = android::base::GetProperty("ro.boot.project_codename", "");
     load_props(project.compare("dre9") != 0);
-
-    int device_sku = stoi(android::base::GetProperty("ro.boot.product.hardware.sku", ""));
-    if (device_sku == 9) {
-        property_override("persist.radio.multisim.config", "ssss");
-    }
 }
